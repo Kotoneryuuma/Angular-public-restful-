@@ -1,0 +1,30 @@
+
+<div style="text-align:center">
+
+  <h1>
+    Restful Tasks API
+  </h1>
+  <br>
+  <h3>
+    All the tasks:
+  </h3>
+  <!-- {{tasks | json}} -->
+  <input type="button" value="all tasks" on-click="Assingment()"  />
+  <ul> 
+    <li *ngFor="let each_task of tasks">{{each_task.title}}<input type="button" value="detail" on-click="Buttonclick(each_task)"> </li>
+    
+  </ul> 
+
+
+
+  <h3>
+    The third task!
+  </h3>
+  <div class="root">
+      <app-task [detail_child] = "detail" ></app-task>
+  </div>
+
+</div>
+
+   
+
